@@ -1,0 +1,69 @@
+{
+  "name": "viswa",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "postinstall": "rn-nodeify --install fs,util,path,tls,stream,buffer,global,process --hack"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~3.2.1",
+    "@react-navigation/native": "^6.1.17",
+    "@react-navigation/native-stack": "^6.10.0",
+    "base-64": "^1.0.0",
+    "buffer": "^4.9.1",
+    "crypto-js": "^4.2.0",
+    "expo": "~51.0.17",
+    "expo-crypto": "~13.0.2",
+    "expo-random": "^14.0.1",
+    "expo-status-bar": "~1.12.1",
+    "firebase": "^10.12.2",
+    "jsbn": "^1.1.0",
+    "path-browserify": "^0.0.0",
+    "process": "^0.11.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.74.2",
+    "react-native-crypto": "^2.2.0",
+    "react-native-crypto-js": "^1.0.0",
+    "react-native-elements": "^3.4.3",
+    "react-native-gifted-chat": "^2.4.0",
+    "react-native-level-fs": "^3.0.0",
+    "react-native-safe-area-context": "4.10.1",
+    "react-native-screens": "3.31.1",
+    "react-native-simple-crypto": "^0.2.15",
+    "react-native-web": "~0.19.10",
+    "readable-stream": "^1.0.33",
+    "stream-browserify": "^1.0.0",
+    "util": "^0.10.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "rn-nodeify": "^10.3.0"
+  },
+  "private": true,
+  "react-native": {
+    "path": "path-browserify",
+    "fs": "react-native-level-fs",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify",
+    "tls": false
+  },
+  "browser": {
+    "path": "path-browserify",
+    "fs": "react-native-level-fs",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify",
+    "tls": false
+  }
+}
